@@ -5,11 +5,12 @@
 	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
 	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8">
-	<title>Blog Archives | nikezono.net</title>
+	<title>blog | nikezono.net</title>
 
 <meta name="author" content="nikezono">
 
-<meta name="description" content=""> <meta name="keywords" content="">
+<meta name="description" content="
+"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -110,7 +111,19 @@ $(document).ready(
 
 </header>
 
-	<div id="content" class="inner"></div>
+	<div id="content" class="inner"><article class="page">
+    <div class="entry-content">
+</div>
+</article>
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
 	<footer id="footer" class="inner">Copyright &copy; 2014
 
     nikezono
@@ -131,7 +144,10 @@ Powered by Octopress.
       var disqus_shortname = 'nikezono';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://nikezono.github.io/blog/index.html';
+        var disqus_url = 'http://nikezono.github.io/blog/index.html';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
